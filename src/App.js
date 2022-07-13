@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Hello from './componentes/Hello';
+import HiMessage from "./componentes/HiMessage";
+import MeuCard from "./componentes/MeuCard";
+import ListaCards from "./componentes/ListaCards";
+import produtos from "./data/produtos";
+import BotaoCountClass from "./componentes/BotaoCountClass";
+import BotaoCountFuncao from "./componentes/BotaoCountFuncao";
+import ListaLivros from "./componentes/ListaLivros";
+import MeuFormulario from "./componentes/MeuFormulario";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Hello nome="Usuário" idade={22}/>
+      {/*<HiMessage mensagem="Como vai?"></HiMessage>
+      <MeuCard key={produtos.id} titulo="Card">
+        <h3>R$ 20,00</h3>
+        <h5>R$ 30,00</h5>
+      </MeuCard>
+      <BotaoCountClass></BotaoCountClass>
+      <BotaoCountFuncao></BotaoCountFuncao>*/}
     </div>
   );
 }
